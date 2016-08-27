@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ADD1C8A33BCD7082959B395 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F3ACC6FA8658F726BD965 /* libPods.a */; };
+		BFF5374711659CA607E23EA7 /* libPods-ZSCornerRadiusDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6008CA82174B66809460219 /* libPods-ZSCornerRadiusDemo.a */; };
 		D6BB2C5E1D70217400867CAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BB2C5D1D70217400867CAB /* main.m */; };
 		D6BB2C611D70217400867CAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BB2C601D70217400867CAB /* AppDelegate.m */; };
 		D6BB2C641D70217400867CAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BB2C631D70217400867CAB /* ViewController.m */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		669E29FD692AF09FDD6F6063 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		7D4F3ACC6FA8658F726BD965 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		998529BCFC0E7B65D2895DEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		30A98C0E64AAA258ACB10AEB /* Pods-ZSCornerRadiusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCornerRadiusDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZSCornerRadiusDemo/Pods-ZSCornerRadiusDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C31F78FE490911C4D34FD39E /* Pods-ZSCornerRadiusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCornerRadiusDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZSCornerRadiusDemo/Pods-ZSCornerRadiusDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D6008CA82174B66809460219 /* libPods-ZSCornerRadiusDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSCornerRadiusDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BB2C591D70217400867CAB /* ZSCornerRadiusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSCornerRadiusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BB2C5D1D70217400867CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6BB2C5F1D70217400867CAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,20 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD1C8A33BCD7082959B395 /* libPods.a in Frameworks */,
+				BFF5374711659CA607E23EA7 /* libPods-ZSCornerRadiusDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17E0F268C04F2D1F3B2B8A48 /* Pods */ = {
+		860A5F2C4DB4E457610225BC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				998529BCFC0E7B65D2895DEC /* Pods.debug.xcconfig */,
-				669E29FD692AF09FDD6F6063 /* Pods.release.xcconfig */,
+				30A98C0E64AAA258ACB10AEB /* Pods-ZSCornerRadiusDemo.debug.xcconfig */,
+				C31F78FE490911C4D34FD39E /* Pods-ZSCornerRadiusDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEC27D0916923FF2213866FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6008CA82174B66809460219 /* libPods-ZSCornerRadiusDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D6BB2C501D70217400867CAB = {
@@ -65,8 +73,8 @@
 			children = (
 				D6BB2C5B1D70217400867CAB /* ZSCornerRadiusDemo */,
 				D6BB2C5A1D70217400867CAB /* Products */,
-				17E0F268C04F2D1F3B2B8A48 /* Pods */,
-				FB5F92ECDC850C5E0BBE4815 /* Frameworks */,
+				860A5F2C4DB4E457610225BC /* Pods */,
+				AEC27D0916923FF2213866FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,14 +130,6 @@
 			path = ZSCornerRadius;
 			sourceTree = "<group>";
 		};
-		FB5F92ECDC850C5E0BBE4815 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D4F3ACC6FA8658F726BD965 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6BB2C701D70217400867CAB /* Build configuration list for PBXNativeTarget "ZSCornerRadiusDemo" */;
 			buildPhases = (
-				2FCFA38E365EF1E33C12A9D4 /* Check Pods Manifest.lock */,
+				315CEF36144161070266953A /* [CP] Check Pods Manifest.lock */,
 				D6BB2C551D70217400867CAB /* Sources */,
 				D6BB2C561D70217400867CAB /* Frameworks */,
 				D6BB2C571D70217400867CAB /* Resources */,
-				E5B7A9CB71D76114B4875111 /* Embed Pods Frameworks */,
-				178296C05441A5EB769CB878 /* Copy Pods Resources */,
+				EF816CB0DFA7D679D985A097 /* [CP] Embed Pods Frameworks */,
+				B7C54067C21E0D552D322556 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,29 +201,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		178296C05441A5EB769CB878 /* Copy Pods Resources */ = {
+		315CEF36144161070266953A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2FCFA38E365EF1E33C12A9D4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,19 +216,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E5B7A9CB71D76114B4875111 /* Embed Pods Frameworks */ = {
+		B7C54067C21E0D552D322556 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZSCornerRadiusDemo/Pods-ZSCornerRadiusDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF816CB0DFA7D679D985A097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZSCornerRadiusDemo/Pods-ZSCornerRadiusDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -366,7 +366,7 @@
 		};
 		D6BB2C711D70217400867CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998529BCFC0E7B65D2895DEC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 30A98C0E64AAA258ACB10AEB /* Pods-ZSCornerRadiusDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZSCornerRadiusDemo/Info.plist;
@@ -378,7 +378,7 @@
 		};
 		D6BB2C721D70217400867CAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 669E29FD692AF09FDD6F6063 /* Pods.release.xcconfig */;
+			baseConfigurationReference = C31F78FE490911C4D34FD39E /* Pods-ZSCornerRadiusDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZSCornerRadiusDemo/Info.plist;

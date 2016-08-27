@@ -18,8 +18,9 @@
     [super viewDidLoad];
     
     
-    
+    //-----本地图片的圆角 使用
     _firstImageView.zs_CornerRadius = 20.0f;
+    
     _secondImageView.zs_CornerRadius = 100.0f;
     
     
@@ -30,8 +31,8 @@
     urlStr = @"http://imgsrc.baidu.com/forum/abpic/item/722c8e82b9014a90eeca060da1773912b21bee41.jpg";
     urlStr = @"http://imgsrc.baidu.com/forum/abpic/item/92fad788d43f8794de823368da1b0ef41ad53ab1.jpg";
     urlStr = @"https://adscdn.baidu.com/baichuan/adp_feed_admin/image/201608221813258601.jpg";
-    urlStr = @"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg";
-    
+//    urlStr = @"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg";
+    //网络图片的圆角 使用 （有缓存）
     [_thirdImageView zs_loadImageUrlStr:urlStr radius:100.0f];
     
     // Do any additional setup after loading the view, typically from a nib.
